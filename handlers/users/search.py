@@ -119,7 +119,7 @@ async def full_handler(message: types.Message):
         await bot.send_message(message.chat.id, "❌Qidiruv To'xtatildi\n📄Siz bosh Menuga qaytdingiz", reply_markup=main_menu)
     elif message.text == '📚Bot Haqida':
         activusers = db.users_count(1)
-        await bot.send_message(message.from_user.id, f"👋 Assalomu Alaykum botimizga xush kelibsiz. ✅\n\n🔥 Ushbu bot orqali siz anonim suhbat qura olasiz... 😊\n‼️Diqqat har bir suhbat narxi 1$\n📃 Sizga kuniga {config.DAILY_LIMIT} ta tekin suhbat qilish imkoniyati beriladi\nAgar kunlik tekin suhbat tugab qolsa admin orqali qushimcha limit olishingiz mumkin! ⚠️Xizmat pullik\n\n👮‍♂️ Admin: {config.ADMIN}\n\n👁‍🗨Hozircha Men orqali {db.select_users_count()} ta odam bilan gaplasha olasiz\n\n♾Qani endi suxbatni boshlang", reply_markup=static)
+        await bot.send_message(message.from_user.id, f"👋 Assalomu Alaykum botimizga xush kelibsiz. ✅\n\n🔥 Ushbu bot orqali siz anonim suhbat qura olasiz... 😊\n‼️Diqqat har bir suhbat narxi 1 sum\n📃 Sizga kuniga {config.DAILY_LIMIT} ta tekin suhbat qilish imkoniyati beriladi\nAgar kunlik tekin suhbat tugab qolsa admin orqali qushimcha limit olishingiz mumkin! ⚠️Xizmat pullik\n\n👮‍♂️ Admin: {config.ADMIN}\n\n👁‍🗨Hozircha Men orqali {db.select_users_count()} ta odam bilan gaplasha olasiz\n\n♾Qani endi suxbatni boshlang", reply_markup=static)
     elif message.text == '🔝Bosh Menuga Qaytish':
         await bot.send_message(message.from_user.id, "Bosh Menuga qaytdingiz", reply_markup=main_menu)
     elif message.text == '👤 Profil':
