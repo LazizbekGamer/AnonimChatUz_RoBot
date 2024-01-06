@@ -8,7 +8,7 @@ import asyncio
 
 async def update_custom_balance_task():
     while True:
-        await asyncio.sleep(60) # Sleep for 24 hours
+        await asyncio.sleep(43200) # Sleep for 24 hours
         db.update_custom_balance()
 
 
